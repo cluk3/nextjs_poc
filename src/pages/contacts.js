@@ -1,12 +1,14 @@
 import React from "react";
-import { Heading, Box, Text } from "@chakra-ui/react";
+import moment from "moment";
+import { Heading, Text } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 
-const Home = () => {
+const Contacts = () => {
   return (
     <Layout>
-      <Box>
-        <Heading>Home</Heading>
+      <div>
+        <Heading>Contacts</Heading>
+        <Text>{moment().format("[Today is] dddd")}</Text>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -16,9 +18,9 @@ const Home = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
-      </Box>
+      </div>
     </Layout>
   );
 };
 
-export default Home;
+export default Contacts;
